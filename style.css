@@ -1,0 +1,303 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f5;
+    color: #333;
+}
+
+/* MENU */
+header {
+    background-color: #087e8b;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #ffe66d;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe66d;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(135deg, #087e8b, #38b000);
+    color: white;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.banner h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO PRINCIPAL */
+.botao {
+    display: inline-block;
+    background-color: #ffe66d;
+    color: #333;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: white;
+    transform: translateY(-4px);
+}
+
+/* DESTINOS */
+.destinos {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.destinos h2,
+.sobre h2,
+.contato h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #087e8b;
+}
+
+.destinos > p {
+    color: #666;
+    font-size: 17px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* CARDS DOS DESTINOS */
+.card {
+    background-color: white;
+    width: 310px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* IMAGENS DOS DESTINOS */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* CONTEÚDO DOS CARDS */
+.card-conteudo {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #087e8b;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card span {
+    display: inline-block;
+    color: #087e8b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* SOBRE */
+.sobre {
+    background-color: #d8f3dc;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* CONTATO E ORÇAMENTO */
+.contato {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contato > p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* FORMULÁRIO */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 35px auto 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    color: #087e8b;
+    margin-bottom: -10px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* DESTAQUE AO SELECIONAR UM CAMPO */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #087e8b;
+    box-shadow: 0 0 5px rgba(8, 126, 139, 0.25);
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* BOTÃO DO FORMULÁRIO */
+button {
+    background-color: #38b000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #087e8b;
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #087e8b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 7px;
+        display: inline-block;
+    }
+
+    .banner {
+        padding: 90px 20px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .destinos h2,
+    .sobre h2,
+    .contato h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
+
